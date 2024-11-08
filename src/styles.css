@@ -1,1 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .base {
+        @apply bg-[#1e1e2e] text-[#cdd6f4] border-[#f2cdcd] border-4; 
+    }
+
+    .surface {
+        @apply 	bg-[#45475a] text-[#bac2de] 
+    }
+}

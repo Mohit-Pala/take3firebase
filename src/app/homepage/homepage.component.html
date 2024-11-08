@@ -1,0 +1,25 @@
+<main class="flex flex-col items-center justify-center h-screen w-screen base">
+    <div class="flex flex-col items-center">
+
+        <div class="flex flex-col items-center base border-2 m-5 p-5 rounded-lg" >
+            <h1>User Dashboard</h1>
+            <p>
+                Status => {{message}}
+            </p>
+            <p>
+                Username => {{userName}}
+            </p>
+            <p>
+                Email => {{email}}
+            </p>
+            
+        </div>
+        <div class="flex flex-row flex-wrap">
+            <div *ngFor="let item of paths">
+                <button class="m-2 surface p-4 rounded-lg" (click)="navigate(item.path)">
+                    {{item.display}}
+                </button>
+            </div>
+        </div>
+    </div>
+</main>

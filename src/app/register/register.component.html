@@ -1,0 +1,13 @@
+<main class="flex flex-col items-center justify-center h-screen w-screen base">
+    <form #loginForm="ngForm" (ngSubmit)="onSubmit(loginForm)" class="flex flex-col items-center base border-2 m-5 p-5 rounded-lg">
+        <div *ngFor="let item of storage">
+            <div>
+                <label for="{{item.id}}">{{item.displayName}}: </label>
+            </div>
+            <div>
+                <input id="{{item.id}}" name="{{item.id}}" type="{{item.type}}" ngModel required class="m-2 surface p-4 rounded-lg">
+            </div>
+        </div>
+        <button type="submit" [disabled]="!loginForm.valid" class="m-2 surface p-2 rounded-lg">Register</button>
+    </form>
+</main>
