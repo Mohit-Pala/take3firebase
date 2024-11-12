@@ -1,3 +1,15 @@
+# how to run
+install npm
+```
+git clone
+```
+```
+npm install
+```
+```
+ng serve
+```
+
 # Take3firebase
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.10.
